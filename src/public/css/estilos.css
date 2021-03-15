@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Pacifico|Source+Code+Pro&display=swap');
+
+/*
+font-family: 'Indie Flower', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Amatic SC', cursive;
+*/
+
+
+/*GENERAL*/
+
+html{
+    /*TRANSICION LENTA*/
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+h1{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;    
+}
+h2{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;  
+    letter-spacing: 1.5px;
+}
+a,p{
+    font-family: 'Source Code Pro', monospace; 
+    letter-spacing: -1.2px;
+}
+p{
+    text-align: center;
+    margin: 15px;
+}
+#logo{
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: white;
+    padding-left: 30px;
+}
+
+/*HEADER*/
+header{
+    background: linear-gradient(to bottom, rgba(92,4,24,1) 0%, rgba(128, 8, 36, 0.616) 44%, rgba(153, 17, 51, 0) 100%);
+    height: 70px;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-bars{
+    margin: 15px;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    /*Mozilla que cuadre el menu al borde*/
+    margin-left: auto;
+}
+nav{
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.menu-lista{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.menu-link{
+    display: block;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: brown;
+    text-decoration: none;
+}
+.menu-link:hover{
+    background-color: rgba(153,17,51,1);
+    color: white;
+}
+.mostrar{
+    left: 0%;
+}
+
+/*VOLVER*/
+.btn-inicio{
+    text-decoration: none;
+    position: fixed;
+    right: 15px;
+    bottom: 5px;
+    z-index: 1000;
+}
+.icon-circle-up{
+    font-size: 50px;
+    color: rgba(153,17,51,1);
+    text-decoration: none;
+    right: 30px;
+    bottom: 30px;
+}
+
+/*CARRITO*/
+.btn-carrito{
+    text-decoration: none;
+    position: fixed;
+    right: 27px;
+    bottom: 60px;
+    z-index: 1000;
+    transition: 0.2s;
+}
+.btn-carrito:hover{
+    font-size: 50px;
+}
+.icon-car{
+    text-decoration: none;
+    font-size: 50px;
+    color: rgba(153,17,51,1);
+    text-decoration: none;
+    right: 30px;
+    bottom: 30px;
+}
+/*BANNER*/
+.banner{
+    position: relative;
+    top: -70px;
+    z-index: -500;
+}
+.banner .texto-banner{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+/*MAIN*/
+main{
+    position: relative;
+    top: -70px;
+}
+main h1{
+    display: block;
+    color: white;
+    background-color: rgba(153,17,51,1);
+    padding: 15px;
+    margin: 0px;
+}
+.sec-productos div{
+    position: relative;
+    background-color: rgb(214, 166, 166);
+    margin-top: 25px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    transition: all 0.25s;
+}
+.sec-productos div:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 12px 16px rgba(0,0,0,0.2);
+}
+
+.sec-productos a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.sec-productos p{
+    padding: 15px;
+}
+.img-prod{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+#alimentos, #refrescos, #confiteria, #tragos{
+    margin: 0px;
+    margin-top: 15px;  
+}
+
+/*PAGINAS*/
+.compras{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.div-compra{
+    margin: auto;
+    margin-top: 15px;
+    /*background-color: rgb(214, 166, 166);*/
+    background-color: white;
+    width: 80%;
+    border-radius: 15px;
+    transition:  all 0.4s;
+}
+.div-compra:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 12px 16px rgba(0,0,0,0.2);
+}
+.img-compra{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    justify-content: center;
+    width: 70%;
+    border-radius: 15px;
+    transition:  all 0.4s;
+}
+.img-compra:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 12px 16px rgba(0,0,0,0.2);
+}
+.cantidad{
+    outline: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    background-color: rgb(230, 198, 198);
+}
+.comprar{
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: rgb(230, 198, 198);
+    cursor: pointer;
+}
+.comprar:hover{
+    background-color: rgb(248, 222, 222);
+    transition: 0.4s;
+}
+/*PAGINA DE INICIO DE SESION*/
+.cuerpo{
+    background-image: url("../imagenes/portada.jpg");
+    background-size: cover;  
+}
+.seccion{
+    margin-top: 220px;
+    margin-bottom: 100px;
+}
+.sesion{
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(214, 186, 186, 0.753);
+    width: 50%;
+    margin: auto;
+}
+.sesion a{
+    color: black;
+    transition: 0.4s;
+}
+.sesion a:hover{
+    color: white;
+}
+.input{
+    border: 0;
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 8px 15px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid rgb(73, 26, 26);
+    border-right: 1px solid rgb(73, 26, 26);
+    width: 60%;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.botones{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+    border: none;
+    background-color: rgb(230, 198, 198);
+    cursor: pointer;
+    transition: 0.4s;  
+}
+.botones:hover{
+    color:white;
+    transform: translateY(-1px);
+    box-shadow: 2px 12px 16px rgba(0,0,0,0.2);
+}   
+input:invalid:required{
+    border-color: red;
+}
+
+/*PAGINA DE COMPRAS*/
+.tablita, th, td{
+    border: solid 2px rgba(255, 255, 255, 0.226);
+    border-radius: 5px;
+    background-color: rgba(158, 98, 98, 0.295);
+}
+
+/*PAGINA DE FACTURA*/
+.facturita{
+    margin: auto;
+    text-align: center;
+    background: url(../imagenes/factura.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 650px;
+    height: 650px;
+}
+.facturita a{
+    color: black;
+    transition: 0.4s;
+}
+.facturita a:hover{
+    font-size: large;
+}
+.facturita div{
+    padding-top: 30px;
+}
+/*FOOTER*/
+footer{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+    margin: 0px;
+}
+.icon-facebook{
+    cursor: pointer;
+    font-size: 40px;
+}
+.icon-instagram{
+    cursor: pointer;
+    font-size: 40px;
+}
+.icon-google{
+    cursor: pointer;
+    font-size: 40px;
+}
+
+/*RESPONSIVE*/
+@media(min-width:480px){
+    #logo{
+        font-size: 50px;
+    }
+    .icon-bars{
+        margin: 20px;
+        margin-right: 5px;
+        width: 50px;
+        height: 50px;
+        line-height: 45px;
+        border-radius: 5px;
+        font-size: 40px;
+    }
+    .banner .texto-banner{
+        font-size: 25px;
+        top: 60%;
+    }
+    main h2{
+       font-size: 30px;
+    }
+    main p{
+        font-size: 20px;
+    }
+    .icon-car{
+        margin-top: 45px;
+        font-size: 30px;
+    }
+    .icon-car:hover{
+        font-size: 35px;
+    }
+}
+@media(min-width:768px){
+
+    .banner .texto-banner{
+        font-size: 30px;
+        top: 60%;
+    }
+    main h2{
+       font-size: 33px;
+    }
+    main p{
+        font-size: 20px;
+    }
+    .sec-productos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .columna{
+        width: 49%; 
+    }
+    #about p{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    .productos{
+        padding: 60px;
+        font-size: 20px;
+    }
+}
+@media(min-width:1024px){
+    nav{
+        position: static;
+        width: auto;
+    }
+    .menu-lista{
+        display: flex;
+    }
+    .menu-link{
+        background: none;
+        color: white;
+    }
+    .menu-link:hover{
+        background-color:white ;
+        color: rgba(153,17,51,1);
+    }
+    .icon-bars{
+        display: none;
+    }
+    .banner .texto-banner{
+        font-size: 35px;
+        top: 60%;
+    }
+    main h1{
+        font-size: 40px;
+    }
+    main h2{
+       font-size: 40px;
+    }
+    main p{
+        font-size: 20px;
+    }
+    .sec-productos{
+        margin: auto;
+        width: 95%;
+    }
+    #about p{
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 60%;
+    }
+    .productos{
+        transition: all 0.4s;
+        padding: 70px;
+        font-size: 23px;
+    }
+    .productos:hover{
+        transform: translateY(-10px);
+        box-shadow: 2px 12px 16px rgba(0,0,0,0.2);
+    }
+    .div-compra{
+        width: 42%;
+    }
+}
+@media(min-width:1280px){
+    .banner .texto-banner{
+        font-size: 45px;
+        top: 60%;
+    }
+    .sec-productos{
+        margin: auto;
+        width: 85%;
+    }
+}

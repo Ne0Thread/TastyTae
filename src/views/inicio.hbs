@@ -1,0 +1,91 @@
+
+    <header>
+        <div class="cabecera" id="home">
+
+            <h1><a id="logo" href="#foot">TastyTae</a></h1>
+
+            <span class="icon-bars" id="btn-menu"></span>
+
+            <nav id="nav-menu">
+
+                <ul class="menu-lista">
+                    <li><a class="menu-link" href=#about>Quienes somos</a></li>
+                    <li><a class="menu-link" href=#productos>Productos</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="imagenes\portada.jpg" alt="Banner" />
+        <div class="texto-banner">
+            <h2>¡Compra tus productos de manera rápida y efectiva!</h2>
+        </div>
+    </div>
+    <a class="btn-carrito" href="app/carrito.php">
+        <span class="icon-car" id="btn-carro"></span>
+    </a>
+    <a class="btn-inicio" id="btn-inicio" href="#home">
+        <span class="icon-circle-up"></span>
+    </a>
+
+    <main>
+
+        <div id="about">
+            <h1>¿Quienes somos?</h1>
+            <p>Somos una empresa distribuidora de alimentos vía internet, la cual le ofrece al usuario variedad de
+                productos,
+                los cuales son clasificados en refrescos, alimentos, confiteria y alcohol, esto para facilitarle al
+                usuario la
+                busqueda de los productos que necesita.
+            </p>
+        </div>
+
+        <h1 id="productos">Productos</h1>
+        <div class="contenedor">
+
+            <section class="sec-productos">
+
+                <div class="columna" id="alimentos">
+                    <a href="/alimentos"></a>
+                    <h2>Alimentos</h2>
+                    <img class="img-prod" src="imagenes/alimentos.jpg" alt="Alimentos">
+                    <p>Compre aquí sus alimentos como son almuerzos, comidas rapidas, harinas, carnes, ensaladas etc.
+                    </p>
+                </div>
+
+                <div class="columna" id="refrescos">
+                    <a href="/bebidas"></a>
+                    <h2>Refrescos</h2>
+                    <img class="img-prod" src="imagenes/bebidas.jpg" alt="Bebidas">
+                    <p>Compre aquí sus bebidas no alcoholicas como son gaseosas, agua, bebidas energizantes, té, etc.
+                    </p>
+                </div>
+
+                <div class="columna" id="confiteria">
+                    <a href="dulces"></a>
+                    <h2>Dulces y más</h2>
+                    <img class="img-prod" src="imagenes/dulces.jpg" alt="Dulces">
+                    <p>Compre aquí sus dulces, chocolates y otros productos.</p>
+                </div>
+
+                <div class="columna" id="tragos">
+                    <a href="alcohol"></a>
+                    <h2>Bebidas alcoholicas</h2>
+                    <img class="img-prod" src="imagenes/alcohol.jpg" alt="Alcohol">
+                    <p>Compre aqui sus bebidas alcoholicas como son cervezas, whisky, vodka, entre otros.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="foot">
+        <h2>¡Síguenos en nuestras redes sociales!</h2>
+        <span class="icon-facebook"></span>
+        <span class="icon-instagram"></span>
+        <span class="icon-google"></span>
+        <p>&copy;TastyCorp todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/menu.js"></script>

@@ -1,0 +1,22 @@
+<header>
+    <div class="cabecera" id="home">
+        <h1><a id="logo" href="/">TastyTae</a></h1>
+    </div>
+</header>
+<section class="seccion">
+    <div class="sesion">
+        <h2>Registrarse</h2>
+        <div>
+            <form method="POST" action="/registroSesion">
+                <input type="text" class="input" name="Nombre" placeholder="Nombre" required />
+                <input type="text" class="input" name="Celular" placeholder="Celular" required />
+                <input type="text" class="input" name="Direccion" placeholder="Dirección" />
+                <input type="email" class="input" name="Correo" placeholder="Email" required />
+                <input type="password" class="input" name="clave" placeholder="Contraseña" required /><br>
+                <input type="submit" class="botones" value="Registrarse" />
+            </form>
+        </div>
+        <p>¿Ya tienes cuenta? Entonces:</p>
+        <a href="/inicioSesion">Iniciar sesion</a>
+    </div>
+</section>

@@ -1,0 +1,18 @@
+CREATE DATABASE dbmtastytae;
+
+USE dbmtastytae;
+
+CREATE TABLE cliente(
+    id INT(11) NOT NULL,
+    nombre VARCHAR(60) NOT NULL,
+    telefono INT(20) NOT NULL,
+    direccion VARCHAR(60) NOT NULL,
+    email VARCHAR(60) NOT NULL,
+    clave VARCHAR(100) NOT NULL
+
+)
+ALTER TABLE cliente ADD PRIMARY KEY(id);
+
+ALTER TABLE cliente MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+DESCRIBE cliente;
